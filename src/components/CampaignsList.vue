@@ -4,6 +4,7 @@
             v-for="campaign of campaignSummaries" 
             :key="campaign.id"
             :campaign="campaign"
+            @click="$router.push(`campaign-details/${campaign.id}`)"
             ></campaign-summary>
     </div>
 </template>
@@ -33,6 +34,6 @@
         },
         components: {
             CampaignSummary,
-        }
+        },
     })
 </script>
