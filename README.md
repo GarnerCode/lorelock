@@ -1,24 +1,16 @@
-# lorelock
+# Lorelock
 
-## Project setup
-```
-npm install
-```
+Dungeons & Dragons Campaign Management System.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This project is currently under development.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Planned Features
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Create campaigns, track gameplay sessions, and manage player and NPC character information
+- Manage combat encounters, initiative, and status effects using created characters. Search the 5e Monster Manual for monsters to add to combat, or create homebrew creatures.
+- Create and manage homebrew races, classes, spells, and items for easy access during gameplay sessions.
+- Upload world and dungeon maps to quickly reference during adventures.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Current Technologies
+
+- Vue.js

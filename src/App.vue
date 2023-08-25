@@ -1,30 +1,26 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+  :root {
+    --color-navy-1: #111525;
+    --color-navy-2: #161B2E;
+    --color-navy-3: #161C31;
+    --color-navy-4: #242E50;
 
-nav {
-  padding: 30px;
+    --color-pink-1: #EE6ADB;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+    --color-white-1: #FFF;
   }
-}
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--color-navy-1);
+  }
+  * {
+    color: var(--color-white-1);
+    font-family: 'Poppins', sans-serif;
+  }
 </style>
