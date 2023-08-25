@@ -85,6 +85,7 @@
                 height: 40px;
                 background-color: var(--color-white-1);
                 border-radius: 100%;
+                cursor: pointer;
             }
             .user-info-name {
                 font-size: 14px;

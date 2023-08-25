@@ -3,6 +3,7 @@ import WelcomeView from '@/views/WelcomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
 
+import CampaignsView from '@/views/dashboard-views/CampaignsView.vue'
 import SessionsView from '@/views/dashboard-views/SessionsView.vue'
 import CharactersView from '@/views/dashboard-views/CharactersView.vue'
 import EncountersView from '@/views/dashboard-views/EncountersView.vue'
@@ -29,6 +30,10 @@ const routes: Array<RouteRecordRaw> = [
     name: 'dashboard',
     component: DashboardView,
     children: [
+      {
+        path: 'campaigns',
+        component: CampaignsView,
+      },
       {
         path: 'sessions',
         component: SessionsView,

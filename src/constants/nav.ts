@@ -1,7 +1,12 @@
 export const nav = [
     {
-        category: 'Campaigns',
+        category: 'Story',
         links: [
+            {
+                label: 'Campaigns',
+                route: 'campaigns',
+                active: true,
+            },
             {
                 label: 'Sessions',
                 route: 'sessions',

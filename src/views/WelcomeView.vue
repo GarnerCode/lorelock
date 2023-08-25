@@ -3,7 +3,7 @@
         <div class="welcome-content">
             <h1>Take Control of Your<br/>Dungeons & Dragons Campaigns</h1>
             <p>Lorelock is an under-development web application for managing Dungeons & Dragons campaigns, sessions, characters, encounters, and more!</p>
-            <Button @click="$router.push('/dashboard/sessions')">Go to Dashboard</Button>
+            <Button @click="$router.push('/dashboard/campaigns')">Go to Dashboard</Button>
         </div>
     </div>
 </template>
