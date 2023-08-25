@@ -9,7 +9,7 @@
                     <div class="nav-category-label">{{ item.category }}</div>
                     <ul class="nav-list">
                         <li class="nav-list-item" v-for="(link, index) of item.links" :key="index">
-                            <router-link :class="{'active': link.active}" class="nav-list-link" :to="link.route">{{ link.label }}</router-link>
+                            <router-link :class="{'active': isActiveLink(link.route)}" class="nav-list-link" :to="link.route">{{ link.label }}</router-link>
                         </li>
                     </ul>
                 </div>
@@ -73,6 +73,27 @@
                     background-color: var(--color-navy-4);
                 }
             }
+            .nav-lower {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                padding-left: 20px;
+            }
+            .user-img {
+                width: 40px;
+                height: 40px;
+                background-color: var(--color-white-1);
+                border-radius: 100%;
+            }
+            .user-info-name {
+                font-size: 14px;
+            }
+            .user-info-id {
+                font-size: 12px;
+                font-style: italic;
+                color: var(--color-gray-1);
+            }
         }
     }
     @media screen and (min-width: 1024px) {
@@ -93,6 +114,11 @@
         data: () => {
             return {
                 navData: nav,
+            }
+        },
+        methods: {
+            isActiveLink: function(route: string) {
+                return this.$route.fullPath.includes(route);
             }
         }
     })

@@ -2,7 +2,7 @@
     <div id="dashboard-view">
         <Navbar></Navbar>
         <div id="dashboard-content">
-            This is the dashboard where cool dashboard content goes.
+            <router-view></router-view>
         </div>
     </div>
 </template>

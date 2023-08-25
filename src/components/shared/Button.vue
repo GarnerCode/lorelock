@@ -1,8 +1,23 @@
 <template>
-    <button>
-
+    <button @click="$emit('click')" class="button">
+        <slot>Button</slot>
     </button>
 </template>
+
+<style lang="scss">
+    .button {
+        background-color: var(--color-navy-4);
+        border: none;
+        font-size: 16px;
+        padding: 5px 40px;
+        transition: var(--transition);
+        display: block;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--color-pink-1);
+        }
+    }
+</style>
 
 <script lang="ts">
     import { defineComponent } from 'vue';

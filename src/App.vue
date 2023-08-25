@@ -13,6 +13,10 @@
     --color-pink-1: #EE6ADB;
 
     --color-white-1: #FFF;
+
+    --color-gray-1: #636363;
+
+    --transition: all 0.25s ease-in-out;
   }
   body {
     margin: 0;
