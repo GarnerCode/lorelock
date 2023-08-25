@@ -13,6 +13,16 @@
             #dashboard-content {
                 padding: 20px;
             }
+            .view-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid var(--color-navy-2);
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                font-size: 1.25rem;
+            }
         }
     }
     @media screen and (min-width: 1024px) {
@@ -25,7 +35,7 @@
 
 <script lang="ts">
     import { defineComponent } from 'vue';
-    import Navbar from '@/components/shared/Navbar.vue';
+    import Navbar from '@/components/Navbar.vue';
 
     export default defineComponent({
         name: 'DashboardView',

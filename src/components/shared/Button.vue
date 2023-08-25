@@ -9,10 +9,11 @@
         background-color: var(--color-navy-4);
         border: none;
         font-size: 16px;
-        padding: 5px 40px;
+        padding: 5px 20px;
         transition: var(--transition);
         display: block;
         cursor: pointer;
+        border-radius: 5px;
         &:hover {
             background-color: var(--color-pink-1);
         }

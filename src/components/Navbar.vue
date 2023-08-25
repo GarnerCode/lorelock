@@ -2,7 +2,7 @@
     <nav>
         <div class="nav-upper">
             <div class="logo">
-                LoreLock
+                Lorelock
             </div>
             <div class="nav-categories">
                 <div class="nav-category" v-for="(item, index) of navData" :key="index">
@@ -68,6 +68,7 @@
                 &.active {
                     background-color: var(--color-navy-4);
                     border-left: 5px solid var(--color-pink-1);
+                    padding-left: 35px;
                 }
                 &:hover {
                     background-color: var(--color-navy-4);
