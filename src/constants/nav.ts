@@ -1,6 +1,7 @@
 export const nav = [
     {
         category: 'Story',
+        icon: 'book.svg',
         links: [
             {
                 label: 'Campaigns',
@@ -21,6 +22,7 @@ export const nav = [
     },
     {
         category: 'Combat',
+        icon: 'swords.svg',
         links: [
             {
                 label: 'Encounters',
@@ -36,6 +38,7 @@ export const nav = [
     },
     {
         category: 'Resources',
+        icon: 'paper.svg',
         links: [
             {
                 label: 'Races',

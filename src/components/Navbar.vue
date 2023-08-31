@@ -2,11 +2,13 @@
     <nav>
         <div class="nav-upper">
             <div class="logo">
-                Lorelock
+                <img src="/assets/logo-full.svg" alt="">
             </div>
             <div class="nav-categories">
                 <div class="nav-category" v-for="(item, index) of navData" :key="index">
-                    <div class="nav-category-label">{{ item.category }}</div>
+                    <div class="nav-category-label">
+                        <img :src="`../icons/${item.icon}`" alt="">
+                        {{ item.category }}</div>
                     <ul class="nav-list">
                         <li class="nav-list-item" v-for="(link, index) of item.links" :key="index">
                             <router-link :class="{'active': isActiveLink(link.route)}" class="nav-list-link" :to="link.route">{{ link.label }}</router-link>
@@ -42,6 +44,9 @@
                 font-size: 1.75rem;
                 text-align: center;
                 margin-bottom: 20px;
+                img {
+                    width: 200px;
+                }
             }
             .nav-categories {
                 display: flex;
@@ -54,6 +59,14 @@
                 font-size: 1.25rem;
                 margin-bottom: 10px;
                 padding-left: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
             }
             .nav-list {
                 list-style: none;
