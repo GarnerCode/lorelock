@@ -4,7 +4,7 @@ import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
 
 import CampaignsView from '@/views/dashboard-views/CampaignsView.vue'
-import CampaignDetails from '@/views/dashboard-views/CampaignsView.vue'
+import CampaignDetails from '@/views/dashboard-views/CampaignDetailsView.vue'
 
 import SessionsView from '@/views/dashboard-views/SessionsView.vue'
 import CharactersView from '@/views/dashboard-views/CharactersView.vue'
@@ -37,7 +37,7 @@ const routes: Array<RouteRecordRaw> = [
         component: CampaignsView,
       },
       {
-        path: 'campaign-details/:campaignId',
+        path: ':campaignId',
         component: CampaignDetails
       },
       {

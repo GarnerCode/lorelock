@@ -14,3 +14,4 @@ This project is currently under development.
 ## Current Technologies
 
 - Vue.js
+- Pinia

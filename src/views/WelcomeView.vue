@@ -3,7 +3,7 @@
         <div class="welcome-content">
             <img src="../assets/logo-full.svg" alt="">
             <p>Lorelock is an under-development web application for managing Dungeons & Dragons campaigns, sessions, characters, encounters, and more!</p>
-            <Button @click="$router.push('/dashboard/campaigns')">Go to Dashboard</Button>
+            <V-Button @click="$router.push('/dashboard/campaigns')">Go to Dashboard</V-Button>
         </div>
     </div>
 </template>
@@ -51,12 +51,12 @@
 
 <script lang="ts">
     import { defineComponent } from 'vue';
-    import Button from '@/components/shared/Button.vue';
+    import VButton from '@/components/shared/VButton.vue';
 
     export default defineComponent({
         name: 'WelcomeView',
         components: {
-            Button,
+            VButton,
         },
     })
 </script>

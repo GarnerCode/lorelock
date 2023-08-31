@@ -27,4 +27,21 @@
     color: var(--color-white-1);
     font-family: 'Poppins', sans-serif;
   }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .gap-1 {
+    gap: 10px;
+  }
+  .gap-2 {
+    gap: 20px;
+  }
+  .gap-3 {
+    gap: 30px;
+  }
 </style>

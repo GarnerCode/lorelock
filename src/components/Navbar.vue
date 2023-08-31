@@ -2,7 +2,7 @@
     <nav>
         <div class="nav-upper">
             <div class="logo">
-                <img src="/assets/logo-full.svg" alt="">
+                <img src="../assets/logo-full.svg" alt="">
             </div>
             <div class="nav-categories">
                 <div class="nav-category" v-for="(item, index) of navData" :key="index">

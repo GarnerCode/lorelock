@@ -2,7 +2,7 @@
     <div id="campaigns-view">
         <div class="view-header">
             <div>Active Campaigns</div>
-            <Button>New Campaign</Button>
+            <VButton>New Campaign</VButton>
         </div>
         <campaigns-list></campaigns-list>
     </div>
@@ -11,13 +11,13 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
     import CampaignsList from '@/components/CampaignsList.vue';
-    import Button from '@/components/shared/Button.vue';
+    import VButton from '@/components/shared/VButton.vue';
 
     export default defineComponent({
         name: 'CampaignsView',
         components: {
             CampaignsList,
-            Button,
+            VButton,
         }
     })
 </script>

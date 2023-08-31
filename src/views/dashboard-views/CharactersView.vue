@@ -2,19 +2,19 @@
     <div id="characters-view">
         <div class="view-header">
             <div>Characters</div>
-            <Button>New Character</Button>
+            <VButton>New Character</VButton>
         </div>
     </div>
 </template>
 
 <script lang="ts">
     import { defineComponent } from 'vue'
-    import Button from '@/components/shared/Button.vue';
+    import VButton from '@/components/shared/VButton.vue';
 
     export default defineComponent({
         name: 'CharactersView',
         components: {
-            Button,
+            VButton,
         }
     })
 </script>
