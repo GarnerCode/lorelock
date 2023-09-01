@@ -28,7 +28,12 @@
     @media screen and (min-width: 1024px) {
         #dashboard-view {
             display: grid;
-            grid-template-columns: 1.5fr 8.5fr;
+            grid-template-columns: 1.75fr 8.25fr;
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        #dashboard-view {
+            grid-template-columns: 1.25fr 8.75fr;
         }
     }
 </style>

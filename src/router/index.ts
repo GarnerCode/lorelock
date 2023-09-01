@@ -6,7 +6,6 @@ import DashboardView from '@/views/DashboardView.vue'
 import CampaignsView from '@/views/dashboard-views/CampaignsView.vue'
 import CampaignDetails from '@/views/dashboard-views/CampaignDetailsView.vue'
 
-import SessionsView from '@/views/dashboard-views/SessionsView.vue'
 import CharactersView from '@/views/dashboard-views/CharactersView.vue'
 import EncountersView from '@/views/dashboard-views/EncountersView.vue'
 import CreaturesView from '@/views/dashboard-views/CreaturesView.vue'
@@ -39,10 +38,6 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: ':campaignId',
         component: CampaignDetails
-      },
-      {
-        path: 'sessions',
-        component: SessionsView,
       },
       {
         path: 'characters',

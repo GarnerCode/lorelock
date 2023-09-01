@@ -9,11 +9,6 @@ export const nav = [
                 active: true,
             },
             {
-                label: 'Sessions',
-                route: 'sessions',
-                active: true,
-            },
-            {
                 label: 'Characters',
                 route: 'characters',
                 active: false,

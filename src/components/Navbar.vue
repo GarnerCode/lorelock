@@ -45,7 +45,7 @@
                 text-align: center;
                 margin-bottom: 20px;
                 img {
-                    width: 200px;
+                    width: 150px;
                 }
             }
             .nav-categories {
@@ -64,8 +64,8 @@
                 align-items: center;
                 gap: 10px;
                 img {
-                    width: 30px;
-                    height: 30px;
+                    width: 25px;
+                    height: 25px;
                 }
             }
             .nav-list {
@@ -111,11 +111,21 @@
             }
         }
     }
+    @media screen and (min-width: 768px) {
+        nav {
+            width: 30%;
+        }
+    }
     @media screen and (min-width: 1024px) {
         nav {
             position: static;
             margin: 0;
             width: calc(100% - 0px);
+            .logo {
+                img {
+                    width: 125px;
+                }
+            }
         }
     }
 </style>
