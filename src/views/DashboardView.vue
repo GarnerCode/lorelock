@@ -40,12 +40,21 @@
 
 <script lang="ts">
     import { defineComponent } from 'vue';
+    import { useGlobalStore } from '@/store/global.store';
     import Navbar from '@/components/Navbar.vue';
 
     export default defineComponent({
         name: 'DashboardView',
+        data: () => {
+            return {
+                globalStore: useGlobalStore(),
+           }
+        },
         components: {
             Navbar,
+        },
+        mounted() {
+            this.globalStore.testFetchUsers();
         }
     })
 </script>
