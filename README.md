@@ -15,3 +15,6 @@ This project is currently under development.
 
 - Vue.js
 - Pinia
+- Node.js
+- Express.js
+- MongoDB
