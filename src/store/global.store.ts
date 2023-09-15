@@ -30,15 +30,20 @@ export const useGlobalStore = defineStore('globalStore', {
                 console.error(error);
             }
         },
-        // async login(credentials): Promise<void> {
-        //     try {
-        //         await fetch(apiLogin, postHeader, {
-        //             body: JSON.stringify(credentials)
-        //         })
-        //         .then((res) => console.log(res));
-        //     } catch (error) {
-        //         console.error(error);
-        //     }
-        // }
+        async login(credentials: any): Promise<void> {
+            try {
+                const response = await fetch(apiLogin, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(credentials)
+                });
+                const result = await response.json();
+                console.log("Success: ", result);
+            } catch (error) {
+                console.error(error);
+            }
+        }
     }
 })
