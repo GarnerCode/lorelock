@@ -28,6 +28,24 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  .label-container {
+    margin-bottom: 5px;
+    label {
+      font-size: 16px;
+      color: var(--color-white-1);
+    }
+  }
+
+  .text-input {
+    background-color: var(--color-navy-4);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+
   .row {
     display: flex;
     flex-direction: row;

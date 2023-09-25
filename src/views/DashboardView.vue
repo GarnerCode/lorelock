@@ -48,18 +48,10 @@
         data: () => {
             return {
                 globalStore: useGlobalStore(),
-                testUser: {
-                    email: 'tyler@garnercode.io',
-                    password: 'passwor',
-                }
            }
         },
         components: {
             Navbar,
         },
-        mounted() {
-            this.globalStore.testFetchUsers();
-            this.globalStore.login(this.testUser);
-        }
     })
 </script>
